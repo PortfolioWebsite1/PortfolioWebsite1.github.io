@@ -1,0 +1,28 @@
+body {
+  background-color: #4B4A45;
+}
+.container {
+  max-width: 120rem;
+}
+.container .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 35rem;
+}
+.container .wrap .card {
+  margin-top: 7rem;
+  max-width: 35rem;
+  height: 20rem;
+  padding: 1rem;
+}
+.container .wrap .card h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+.container .wrap .card p {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
