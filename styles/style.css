@@ -389,6 +389,107 @@ body {
     display: none;
   }
 }
+@media (max-width: 425) {
+  .main-header-menu a {
+    margin: 0 1.8rem;
+    font-size: 1.8rem;
+    margin-top: 0rem;
+  }
+  .main-header-menu a:nth-child(2) {
+    margin-top: 0;
+  }
+  .main-header-menu a:nth-child(3) {
+    margin-top: 0;
+  }
+  .main-header-contacts {
+    text-align: center;
+  }
+  .main-header-contacts a {
+    display: none;
+  }
+  .main-content-text {
+    margin-top: 0;
+    margin-left: -0.5rem;
+    margin-bottom: 8rem;
+  }
+  .main-content-text h1 {
+    font-size: 4rem ;
+  }
+  .main-content-img {
+    display: none;
+  }
+  .work-header {
+    padding: 3.2rem 0 0 0;
+  }
+  .work-header h2 {
+    font-size: 3.5rem;
+  }
+  .work-content .box {
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+  }
+  .work-content .box h2 {
+    font-size: 3rem;
+  }
+  .services-header {
+    padding: 3.5rem 0 0 0;
+  }
+  .services-header h2 {
+    font-size: 3.5rem;
+  }
+  .services-content {
+    margin-left: -6rem;
+  }
+  .services-content .box {
+    width: 30rem;
+    height: 55rem;
+    margin-left: 8rem;
+    margin-bottom: 3rem;
+  }
+  .services-content .box h2 {
+    margin-left: auto;
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .services-content .box .box_2 {
+    margin-left: -2rem;
+  }
+  .services-content .box p {
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+  }
+  .services-content .box a {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+  }
+  .services-content .box2 {
+    margin-bottom: 3rem;
+    height: 60rem;
+  }
+  .services-content .box2 a {
+    margin-top: 5rem;
+    font-size: 1.8rem;
+  }
+  .contacts-menu img {
+    display: none;
+  }
+  .contacts-social {
+    text-align: center;
+  }
+  .contacts-social a {
+    margin: 3rem;
+    margin-left: -0.1rem;
+    font-size: 1.5rem;
+  }
+  .contacts-social a:nth-child(4) {
+    margin-left: 0;
+    padding: 2rem 0 0 0 ;
+  }
+  .contacts-social img {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .main-header-menu a {
     margin: 0 2.3rem;
