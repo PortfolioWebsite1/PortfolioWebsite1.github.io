@@ -1,0 +1,461 @@
+//Main Settings
+
+html{
+overflow-x: hidden;
+    font-size: 10px;
+    height: 100vh;
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto ;
+}
+//Colors settings
+
+@orange-2: #e2810b;
+@orange: #B8690B;
+@white: #FFFFFF;
+@text-href: #fc557c;
+
+//Main section
+
+.main{
+    background-color: #2F3238;
+    &-header{
+       &-menu{
+           padding: 3rem 0;
+           a{
+               margin: 0 5.2rem;
+                font-size: 1.8rem;
+                color: @white;
+                &:hover {
+                    color: @text-href;
+                    text-decoration: none;
+                    border-bottom: 1px solid @text-href;
+                    transition: 0.4s;
+                }
+                &:focus{
+                    color: @text-href;
+                    border-bottom: 1px solid @text-href;
+                }
+           }
+       }
+       &-contacts{
+        padding: 3rem 0;
+        a{
+             font-size: 2rem;
+             color: @white;
+             &:hover {
+                color: @text-href;
+                text-decoration: none;
+                border-bottom: 1px solid @text-href;
+                transition: 0.4s;
+            }
+             &:focus{
+                 color: @text-href;
+                 border-bottom: 1px solid @text-href;
+             }
+        }
+       }
+    }
+    &-content{
+        &-text{
+            margin-top: 14rem;
+            h1{
+            color: @orange;
+            font-size: 11.6rem;
+            }
+        }
+        &-img{
+            display: block;
+            text-align: center;
+            margin-left: -6rem;
+            margin-top: 1.1rem ;
+            margin-bottom: -0.8rem;
+           img{
+            width: 1209px;
+            height: 682px;
+           }
+        }
+    }
+}
+
+//work Section
+.work{
+    background-color: #292C32;
+    &-header{
+        h2{
+            font-weight: 500;
+            font-size: 10rem;
+            color: @orange;
+        }
+    }
+    &-content{
+        .box{
+            background-color:#313949;
+            width: 32rem;
+            height: 47rem;
+            margin-top: 17rem;
+            margin-bottom: 34rem;
+            h2{
+                padding: 4rem;
+                text-align: center;
+                font-weight: 500;
+                font-size: 4rem;
+                color: @white;
+            }
+            p{
+                text-align: center;
+                font-weight: 500;
+                font-size: 2.4rem;
+                color: @white;
+            }
+        }
+    }
+}
+
+//services Section
+.services{
+    background-color: #282b31;
+    &-header{
+        h2{
+            font-weight: 500;
+            font-size: 10rem;
+            color: @orange;
+        }
+    }
+    &-content{
+        h2{
+            text-align: center;
+            padding: 3rem;
+            font-weight: 500;
+            font-size: 5rem;
+            color: @orange;
+        }
+        
+        a{
+            margin-top: 6rem;
+            font-weight: 500;
+            font-size: 2.5rem;
+            color: @orange;
+            display: block;
+            text-align: center;
+            &:hover{
+                color: @orange-2;
+                text-decoration: none;
+                transition: 0.4s;
+            }
+        }
+        .box{
+            background-color: #353535;
+            height: 75rem;
+            width: 46rem;
+            margin-top: 14rem;
+            margin-bottom: 35rem;
+
+            p{
+                line-height: 5rem;
+                padding: 3rem 3rem 0 3rem;
+                font-weight: 500;
+                font-size: 2.5rem;
+                color: @white;
+                &:nth-child(2){
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+        }
+        .box{
+            background-color: #353535;
+            height: 75rem;
+            width: 45rem;
+            margin-top: 14rem;
+            margin-bottom: 35rem;
+
+            p{
+                line-height: 4.5rem;
+                padding: 3rem 3rem 0 3rem;
+                font-weight: 500;
+                font-size: 2.4rem;
+                color: @white;
+                &:nth-child(2){
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+//contacts section
+.contacts{
+    padding: 5rem;
+    background-color: #212121;
+    display: block;
+    &-menu{
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        }
+    &-social{
+        a{
+            color:@white;
+            font-size: 19px;
+            padding: 0 0.5rem;
+            &:hover {
+                color: @text-href;
+                text-decoration: none;
+                border-bottom: 1px solid @text-href;
+                transition: 0.4s;
+            }
+             &:focus{
+                 color: @text-href;
+                 border-bottom: 1px solid @text-href;
+             }
+        }
+        img{
+            width:40px ;
+            height: 28px;
+            &:nth-child(3){
+                width: 35px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px){
+    .main{
+        &-header{
+            &-menu{
+                margin-left: 10.5rem;
+                margin-top: 6rem;
+                margin-bottom: 0;
+         a{
+             font-size:2.5rem ;
+             line-height: 4rem;
+         }
+            }
+            &-contacts{
+                a{
+                    display: none;
+                }
+            }
+        }
+        &-content{
+            margin-left: 4rem;
+           &-text{
+               
+               margin-bottom: 8rem;
+            h1{
+                margin-top: -4rem;
+                font-size:3.8rem ;
+            }
+           }
+           &-img{
+
+           display: none;
+        }
+        }
+    }
+    .work{
+        &-header{
+            padding: 3.2rem 0 0 0;
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+        &-content{
+            margin-left: -11rem;
+            .box{
+                margin-top: 6rem;
+                margin-bottom: 3rem;
+
+                h2{
+                    font-size: 3rem;
+                }
+
+            }
+        }
+    }
+    .services{
+        margin-left: -11rem;
+        &-header{
+            margin-left: 14rem;
+            padding: 3.5rem 0 0 0;
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+        &-content{
+        .box{
+            width: 30rem;
+            height: 55rem;
+        margin-top: 12rem;
+        h2{
+            margin-left: auto;
+            font-size: 2.3rem;
+            text-align: center;
+        }
+
+        p{
+            line-height: 3.5rem;
+            font-size: 1.5rem;
+        }
+        
+        a{
+            margin-top: 4rem;
+            font-size: 1.8rem;
+        }
+        }
+         .box2{
+             margin-top: 4rem;
+         }
+        }
+    }
+    .contacts{
+        &-menu{
+            img{
+            display: none;
+            }
+        }
+        &-social{
+            text-align: center;
+            margin-left: 3rem;
+            a{
+                margin: 3rem;
+                font-size: 1.5rem;
+                &:nth-child(4){
+                padding:2rem 0 0 0 ;
+                }
+
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .main{
+        &-header{
+            &-menu{
+         a{
+             margin: 7rem;
+         }
+            }
+            &-contacts{
+                text-align: center;
+                a{
+                }
+            }
+        }
+        &-content{
+           &-text{
+               margin-top: 5rem;
+               margin-left: -0.5rem;
+               margin-bottom: 10rem;
+            h1{
+                
+                font-size:6rem ;
+            }
+           }
+           &-img{
+
+           display: none;
+        }
+        }
+    }
+    .work{
+        &-header{
+            padding: 3.2rem 0 0 0;
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+        &-content{
+            .box{
+                margin-top: 6rem;
+                margin-left: 18rem;
+                margin-bottom: 3rem;
+
+                h2{
+                    font-size: 3rem;
+                }
+
+            }
+        }
+    }
+    .services{
+        &-header{
+            padding: 3.5rem 0 0 0;
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+        &-content{
+            margin-left: -6rem;
+            
+        .box{
+            width: 30rem;
+            height: 55rem;
+            margin-left: 26rem;
+        margin-bottom: 3rem;
+        h2{
+            margin-left: auto;
+            font-size: 2.3rem;
+            text-align: center;
+        }
+        .box_2{
+            margin-left: -2rem;
+        }
+        p{
+            line-height: 3.5rem;
+            font-size: 1.5rem;
+        }
+        
+        a{
+            margin-top: 4rem;
+            font-size: 1.8rem;
+        }
+        }
+        .box2{
+            margin-bottom: 3rem;
+            height: 60rem;
+            a{
+                margin-top: 5rem;
+                font-size: 1.8rem;
+            }
+        }
+        }
+    }
+    .contacts{
+        &-menu{
+            img{
+            display: none;
+            }
+        }
+        &-social{
+            text-align: center;
+            a{
+                margin: 3rem;
+                margin-left: -0.1rem;
+                font-size: 1.5rem;
+                &:nth-child(4){
+                    margin-left: 0;
+                padding:2rem 0 0 0 ;
+                }
+
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+}
